@@ -1,0 +1,7 @@
+def reverse_number(n):
+    return int(str(n)[::-1])
+
+# Test
+N = 988
+print(reverse_number(N))
+

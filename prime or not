@@ -1,0 +1,21 @@
+2.Given a number,check whether it is a prime number or not
+
+def is_prime(n):
+    if n<=1:
+        return False
+    elif n<=3:
+        return True
+    elif n%2 ==0 or n%3 ==0:
+        return False
+    i=5
+    while i*I<=n:
+        if n%i==0 or n%(i+2)==0:
+            return False
+        i +=6
+    return True
+
+    number =int(input("Enter a number:"))
+    if is_prime(number):
+        print(number,"Yes")
+    else:
+        print(number,"No")                        

@@ -1,0 +1,11 @@
+1.write a program to print the reverse of the given string
+
+def reverse_string(string):
+    return string[::-1]
+
+input_string=input("Enter a string:")
+if 1<=len(input_string)<=100 and all('a'<=char<='z' for char in input_string):
+    reversed_string=reverse_string(input_string)
+    print("Reversed string:",reversed_string)
+else:
+    print("String does not comes under the constraints")

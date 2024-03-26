@@ -1,0 +1,16 @@
+3.Given an array of numbers,arrange them in a way that it forms the largest value
+
+def largest_number(arr):
+    arr = list(map(str, arr))
+    
+    def compare(x, y):
+        return int(y + x) - int(x + y)
+    
+    arr.sort(key=compare)
+    
+    return ''.join(arr)
+
+# Example usage
+input_array = [54, 546, 548, 60]
+output = largest_number(input_array)
+print(output) 
